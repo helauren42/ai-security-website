@@ -1,0 +1,21 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 9000;
+  color: white;
+}
+
+#main-text-cont {
+  width: 80%;
+  background-color: var(--darker-black);
+  text-align: center;
+  border: 0.01rem solid var(--light-border)
+}
+
+#main-text {
+  color: var(--text-white);
+}
