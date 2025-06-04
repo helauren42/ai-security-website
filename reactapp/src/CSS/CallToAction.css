@@ -1,16 +1,27 @@
 #call-to-action {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  margin: 2rem 0;
+}
+
+.short-divider {
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  min-width: 60%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  background-color: blue;
+  border-top: 0.07rem solid var(--medium-border);
+  border-bottom: 0.07rem solid var(--medium-border);
+  padding: 1rem;
 }
 
 #cta-title {
   width: 50%;
-  background-color: blue;
   color: var(--text-white);
+  font-weight: 700;
+  font-size: 1.8rem;
 }

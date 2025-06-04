@@ -19,8 +19,8 @@ header {
   background-color: var(--main-grey);
   text-align: center;
   border: 0.01rem solid var(--dark-border2);
-  box-shadow: 0px 0px 10px var(--blue-shadow);
-  padding: 0 8%;
+  box-shadow: 0px 0px 1rem var(--blue-shadow);
+  padding: 3% 5%;
 }
 
 .main-text {
@@ -53,6 +53,6 @@ header {
 
 #header-bottom-line {
   width: 50%;
-  height: 0.1%;
-  border-bottom: 0.001rem solid var(--dark-border2);
+  height: 0.4%;
+  /* border-bottom: 0.001rem solid var(--blue-shadow); */
 }

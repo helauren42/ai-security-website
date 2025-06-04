@@ -1,8 +1,12 @@
+import '../CSS/CallToAction.css'
+
 export const CallToAction = () => {
   return (
-    <div id="call-to-action">
-      <h1 id="cta-title">Are you ready to start using a smart surveillance system?</h1>
-      <button className="std-hover-active">Get started</button>
-    </div>
+    <section className="page-section" id="call-to-action">
+      <div className="short-divider">
+        <p id="cta-title">Schedule a free call to find out how we can accelerate your growth</p>
+        <button className="std-hover-active classic-btn">Get in touch</button>
+      </div>
+    </section>
   )
 }

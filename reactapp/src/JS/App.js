@@ -3,6 +3,7 @@ import '../CSS/App.css';
 import { Navbar } from './Navbar';
 import { Header } from './Header'
 import { CallToAction } from './CallToAction';
+import { Footer } from './Footer';
 
 function App() {
   const [tabletDisplay, setTabletDisplay] = useState(false)
@@ -20,10 +21,10 @@ function App() {
     <div className="App">
       <Navbar tabletDisplay={tabletDisplay} />
       <Header />
-      <div className='whole-page'>
-      </div>
-      {/* <CallToAction /> */}
-      <footer></footer>
+      {/* <div className='whole-page'> */}
+      {/* </div> */}
+      <CallToAction />
+      <Footer />
     </div >
   );
 }
