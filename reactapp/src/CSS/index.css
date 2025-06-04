@@ -4,4 +4,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-black);
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
