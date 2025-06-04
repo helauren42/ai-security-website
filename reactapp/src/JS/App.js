@@ -6,10 +6,12 @@ import { CallToAction } from './CallToAction';
 import { Footer } from './Footer';
 
 function App() {
+  const [mobileDisplay, setMobileDisplay] = useState(false)
   const [tabletDisplay, setTabletDisplay] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   useEffect(() => {
     console.log("resized screen width to: ", screenWidth)
+    setMobileDisplay(screenWidth < 400)
     setTabletDisplay(screenWidth < 768)
   })
   useEffect(() => {
