@@ -55,6 +55,20 @@ nav {
   border-style: none;
 }
 
+#dropdown {
+  position: relative;
+}
+
 #dropdown-menu {
   display: none;
+  position: absolute;
+}
+
+.dropdown-btn {
+  background-color: var(--main-grey);
+  color: var(--text-white);
+  border: 0.01rem solid var(--dark-border2);
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
 }

@@ -15,15 +15,29 @@ const TabletMenu = () => {
   const [openMenu, setOpenMenu] = useState(true)
   useEffect(() => {
     console.log("openMenu: ", openMenu)
+    const elem = document.getElementById("dropdown-menu")
+    if (openMenu)
+      elem.style.display = "block"
+    else
+      elem.style.display = "none"
+
   }, [openMenu])
   return (
-    <button className='nav-menu' id="nav-menu-tablet" onClick={() => setOpenMenu(true)}> Menu
-      <ul id="dropdown-menu" >
-        <li className="std-hover-active">Platform</li>
-        <li className="std-hover-active">Faq</li>
-        <li className="std-hover-active">Careers</li>
-      </ul >
-    </button >
+    <div id="dropdown">
+      <button className='nav-menu' id="nav-menu-tablet" onClick={() => setOpenMenu(!openMenu)}> Menu
+      </button >
+      <div id="dropdown-menu" >
+        <button className="std-hover-active dropdown-btn" onClick={() => {
+          setOpenMenu(false)
+        }}>Platform</button>
+        <button className="std-hover-active dropdown-btn" onClick={() => {
+          setOpenMenu(false)
+        }}>Faq</button>
+        <button className="std-hover-active dropdown-btn" onClick={() => {
+          setOpenMenu(false)
+        }}>Careers</button>
+      </div >
+    </div>
   );
 };
 
