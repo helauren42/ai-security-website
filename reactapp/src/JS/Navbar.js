@@ -12,7 +12,7 @@ const ClassicMenu = () => {
 }
 
 const TabletMenu = () => {
-  const [openMenu, setOpenMenu] = useState(true)
+  const [openMenu, setOpenMenu] = useState(false)
   useEffect(() => {
     console.log("openMenu: ", openMenu)
     const elem = document.getElementById("dropdown-menu")
@@ -41,7 +41,7 @@ const TabletMenu = () => {
   );
 };
 
-export const Navbar = ({ screenWidth, tabletDisplay }) => {
+export const Navbar = ({ tabletDisplay }) => {
   return (
     <nav >
       <section id="navbar">

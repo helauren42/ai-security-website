@@ -18,9 +18,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Navbar screenWidth={screenWidth} tabletDisplay={tabletDisplay} />
+      <Navbar tabletDisplay={tabletDisplay} />
       <Header />
-      {/* <CallToAction /> */}
+      <CallToAction />
       <footer></footer>
     </div >
   );
