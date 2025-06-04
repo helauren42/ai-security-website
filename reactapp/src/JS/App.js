@@ -20,7 +20,9 @@ function App() {
     <div className="App">
       <Navbar tabletDisplay={tabletDisplay} />
       <Header />
-      <CallToAction />
+      <div className='whole-page'>
+      </div>
+      {/* <CallToAction /> */}
       <footer></footer>
     </div >
   );
