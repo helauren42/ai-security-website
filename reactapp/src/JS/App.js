@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import '../CSS/App.css';
 import { Navbar } from './Navbar';
 import { Header } from './Header'
+import { CallToAction } from './CallToAction';
 
 function App() {
   const [tabletDisplay, setTabletDisplay] = useState(false)
@@ -19,8 +20,7 @@ function App() {
     <div className="App">
       <Navbar screenWidth={screenWidth} tabletDisplay={tabletDisplay} />
       <Header />
-      <section className="section-container">
-      </section>
+      {/* <CallToAction /> */}
       <footer></footer>
     </div >
   );

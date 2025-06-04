@@ -16,6 +16,10 @@
   --light-bg: #dbdbec;
 }
 
+/* .App { */
+/*   height: 200vh; */
+/* } */
+
 .section-container {
   box-sizing: border-box;
   width: 100%;
