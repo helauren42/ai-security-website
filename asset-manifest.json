@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/novatusWeb/static/css/main.3a58d491.css",
+    "main.js": "/novatusWeb/static/js/main.b9910e96.js",
+    "static/media/Inter-VariableFont_opsz,wght.ttf": "/novatusWeb/static/media/Inter-VariableFont_opsz,wght.e05c5f3d1fa6a3893d84.ttf",
+    "static/media/black-bag-fighting.png": "/novatusWeb/static/media/black-bag-fighting.3c9cbc1324fc1ab4f7c6.png",
+    "static/media/icons8-instagram.svg": "/novatusWeb/static/media/icons8-instagram.8ff7ce92ad753b591ed4c1d03e84c026.svg",
+    "static/media/double-arrow-down-svgrepo-com.svg": "/novatusWeb/static/media/double-arrow-down-svgrepo-com.195ffa1e605acca242f52e17a9318ae7.svg",
+    "index.html": "/novatusWeb/index.html",
+    "static/media/icons8-linkedin.svg": "/novatusWeb/static/media/icons8-linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
+    "static/media/icons8-youtube.svg": "/novatusWeb/static/media/icons8-youtube.6806408aa1bf55b7f1aaba51978e649e.svg",
+    "main.3a58d491.css.map": "/novatusWeb/static/css/main.3a58d491.css.map",
+    "main.b9910e96.js.map": "/novatusWeb/static/js/main.b9910e96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a58d491.css",
+    "static/js/main.b9910e96.js"
+  ]
+}
