@@ -4,6 +4,8 @@ import { Navbar } from './Navbar';
 import { Header } from './Header'
 import { CallToAction } from './CallToAction';
 import { Footer } from './Footer';
+import { Capabilities } from './TripCardBlocks.js'
+import { Brief } from './Brief';
 
 function App() {
   const [mobileDisplay, setMobileDisplay] = useState(false)
@@ -23,8 +25,8 @@ function App() {
     <div className="App">
       <Navbar tabletDisplay={tabletDisplay} />
       <Header />
-      {/* <div className='whole-page'> */}
-      {/* </div> */}
+      <Brief />
+      <Capabilities screenWidth={screenWidth} />
       <CallToAction />
       <Footer />
     </div >
