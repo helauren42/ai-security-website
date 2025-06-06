@@ -16,23 +16,13 @@ nav {
   padding: 0 5%;
   border-bottom: 0.01rem solid var(--dark-border2);
   padding: 1% 5%;
+  user-select: none;
 }
 
 #nav-title {
   font-size: 1.5rem;
   color: var(--text-white);
   text-shadow: 1.8px 1.8px var(--blue-shadow);
-}
-
-#nav-title:hover {
-  color: var(--text-white-hover);
-  cursor: pointer;
-  filter: brightness(80%);
-}
-
-#nav-title:active {
-  transform: scale(90%);
-  filter: brightness(60%);
 }
 
 .nav-menu {

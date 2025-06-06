@@ -45,7 +45,7 @@ export const Navbar = ({ tabletDisplay }) => {
   return (
     <nav >
       <section id="navbar">
-        <h1 id="nav-title" > Novatus</h1 >
+        <h1 className='std-hover-active' id="nav-title" > Novatus</h1 >
         {tabletDisplay ? <TabletMenu /> : <ClassicMenu />}
         <button className='classic-btn std-hover-active' id="service-btn">Request a demo</button>
       </section>

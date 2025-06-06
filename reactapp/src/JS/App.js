@@ -6,6 +6,7 @@ import { CallToAction } from './CallToAction';
 import { Footer } from './Footer';
 import { Capabilities } from './TripCardBlocks.js'
 import { Brief } from './Brief';
+import { Benefits } from './Benefits';
 
 function App() {
   const [mobileDisplay, setMobileDisplay] = useState(false)
@@ -27,6 +28,7 @@ function App() {
       <Header />
       <Brief />
       <Capabilities screenWidth={screenWidth} />
+      <Benefits />
       <CallToAction />
       <Footer />
     </div >

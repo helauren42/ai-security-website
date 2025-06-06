@@ -63,3 +63,11 @@ header {
   height: 40px;
   fill: var(--second-grey);
 }
+
+#arrow-down-img:hover {
+  cursor: pointer;
+}
+
+#arrow-down-img:active {
+  transform: scale(0.9);
+}
