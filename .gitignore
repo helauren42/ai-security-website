@@ -11,5 +11,5 @@ TESTER
 __pycache__
 .env
 venv
-build/
-node_modules
+*build/
+*node_modules/
