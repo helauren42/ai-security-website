@@ -1,0 +1,15 @@
+*out*
+*.txt
+*.log
+*.o
+*test*
+.vscode
+*secrets*
+*temp*
+TESTER
+.swp
+__pycache__
+.env
+venv
+build/
+node_modules

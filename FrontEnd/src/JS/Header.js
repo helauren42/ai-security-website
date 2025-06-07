@@ -9,7 +9,7 @@ export const Header = () => {
         <p className="main-text">Your digital security operations center</p>
       </div>
       <div className="classic-paragraph" id="second-text-cont">
-        <p className="second-text">Real time awareness and insight, when and where it matters most.<br />An optimal video security system</p>
+        <p className="second-text">Real time awareness and insight, when and where it matters most.<br />An optimal video security system.</p>
       </div>
       <div id="header-btn-cont">
         <button className='classic-btn std-hover-active' id="service-btn">Request a demo</button>

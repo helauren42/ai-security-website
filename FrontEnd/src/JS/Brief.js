@@ -8,7 +8,7 @@ export const Brief = () => {
           The Novatus AI software analysis and interprets the video data.<br /> Detecting early threats, understanding context, and delivering instant actionable insight.<br />
         </p>
         <div id="how-it-works">
-          <h2 id="how-it-works-title">Plug the solution into any existing video surveillance system and have Novatus AI:</h2>
+          <h2 id="how-it-works-title">Plug the solution into any existing video surveillance system and have Novatus:</h2>
           <div id="mini-trip-cards-section">
             <div className='mini-trip-card'>
               <h3>Interpret</h3>
