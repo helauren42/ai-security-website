@@ -14,9 +14,12 @@ function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   useEffect(() => {
     console.log("resized screen width to: ", screenWidth)
-    setMobileDisplay(screenWidth < 400)
-    setTabletDisplay(screenWidth < 768)
-  })
+    setMobileDisplay(screenWidth <= 400)
+    setTabletDisplay(screenWidth <= 768)
+  }, [screenWidth])
+  useEffect(() => {
+    console.log("changed tabletDisplay: ", tabletDisplay)
+  }, [tabletDisplay])
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
@@ -27,8 +30,8 @@ function App() {
       <Navbar tabletDisplay={tabletDisplay} />
       <Header />
       <Brief />
-      <Capabilities screenWidth={screenWidth} />
-      <Benefits />
+      <Capabilities />
+      <Benefits screenWidth={screenWidth} mobileDisplay={mobileDisplay} tabletDisplay={tabletDisplay} />
       <CallToAction />
       <Footer />
     </div >

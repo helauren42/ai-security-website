@@ -1,23 +1,45 @@
 .benefits-advantages-wrapper {
   height: auto;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   color: var(--text-white);
-  margin: 2rem 0;
+  margin: 5rem 0;
+  flex-wrap: wrap;
 }
 
-.benefits-advantages-section {
+.benefits-advantages-desktop-section {
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 3rem 3rem;
+  margin: 3rem 0;
+  gap: 5rem;
+}
+
+.benefits-advantages-tablet-section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem 0;
   gap: 2rem;
 }
 
+#benefits-advantages-title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .benefits-advantages-title {
+  width: 80%;
   color: var(--text-white);
   font-size: 2rem;
   text-align: center;
@@ -26,15 +48,28 @@
 .cards-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
+}
+
+.cards-container-tablet {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
 }
 
 .card {
   width: 30%;
+  max-width: 23vw;
   height: auto;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background-color: var(--main-grey);
   border: 0.01rem solid var(--dark-border2);
   box-shadow: 0px 0px 0.5rem var(--blue-shadow);
@@ -43,13 +78,63 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1rem;
 }
 
-/* .card h2 { */
-/*   font-size: 1.8rem; */
-/* } */
-/**/
-/* .card p { */
-/*   font-size: 1.3rem; */
-/* } */
+.card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card-p-cont {
+  padding-top: 0.3rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+    max-width: 90%;
+  }
+
+  /* .card h2 { */
+  /*   font-size: 1.1rem; */
+  /*   font-weight: 600; */
+  /* } */
+  /**/
+  /* .card p { */
+  /*   font-size: 0.9rem; */
+  /* } */
+}
+
+@media (max-width: 379px) {
+  .benefits-advantages-section {
+    flex-direction: column;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 90%;
+  }
+
+  /* .card h2 { */
+  /*   font-size: 1rem; */
+  /*   font-weight: 600; */
+  /* } */
+  /**/
+  /* .card p { */
+  /*   font-size: 0.8rem; */
+  /* } */
+}

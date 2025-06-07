@@ -1,12 +1,11 @@
 #section-brief {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 4%;
   padding-bottom: 3%;
-  gap: 2rem;
   z-index: 1;
 }
 
@@ -19,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  gap: 2rem;
 }
 
 #brief-title {
@@ -69,6 +69,7 @@
   border: 0.01rem solid var(--dark-border);
   padding: 0.8rem;
   border-radius: 1rem;
+  background-color: var(--card-black);
 }
 
 .mini-trip-card h3 {

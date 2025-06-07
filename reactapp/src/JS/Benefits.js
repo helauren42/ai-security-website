@@ -1,8 +1,73 @@
 import { useEffect } from 'react'
 import "../CSS/Benefits.css"
 
-export const Benefits = ({ screenWidth }) => {
+const DesktopBenefits = () => {
+  return (
+    <section className="benefits-advantages-desktop-section">
+      <h1 className="benefits-advantages-title">Leverage your current security system to its full potential</h1>
+      <div className="cards-container">
+        <div className="card">
+          <h2>Accurate diagnosis</h2>
+          <div className="card-p-cont">
+            <p>Standard intelligent video securities fail to identify complex behaviours and create false positives </p>
+          </div>
+        </div>
+        <div className="card">
+          <h2>Save time and resources</h2>
+          <div className="card-p-cont">
+            <p>Spend less time scrubbing through videos and be more focused on critical tasks</p>
+          </div>
+        </div>
+        <div className="card">
+          <h2>Proactivity and oversight</h2>
+          <div className="card-p-cont">
+            <p>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
+          </div>
+        </div>
+        {/* <div className="card"> */}
+        {/*   <h2>Simplify Post-Event Analysis</h2> */}
+        {/*   <p>Quickly retrieve the footage you are looking for</p> */}
+        {/* </div> */}
+      </div>
+    </section >
+  )
+}
+const TabletBenefits = () => {
+  return (
+    <section className="benefits-advantages-tablet-section">
+      <div id="benefits-advantages-title-wrapper">
+        <h1 className="benefits-advantages-title">Leverage your current security system to its full potential</h1>
+      </div>
+      <div className="cards-container-tablet">
+        <div className="card">
+          <h2>Save time and resources</h2>
+          <div className="card-p-cont">
+            <p>Spend less time scrubbing through videos and be more focused on critical tasks</p>
+          </div>
+        </div>
+        <div className="card">
+          <h2>Accurate diagnosis</h2>
+          <div className="card-p-cont">
+            <p>Standard intelligent video securities fail to identify complex behaviours and create false positives </p>
+          </div>
+        </div>
+        <div className="card">
+          <h2>Proactivity and oversight</h2>
+          <div className="card-p-cont">
+            <p>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
+          </div>
+        </div>
+        {/* <div className="card"> */}
+        {/*   <h2>Simplify Post-Event Analysis</h2> */}
+        {/*   <p>Quickly retrieve the footage you are looking for</p> */}
+        {/* </div> */}
+      </div>
+    </section >
+  )
+}
+export const Benefits = ({ screenWidth, mobileDisplay, tabletDisplay }) => {
   useEffect(() => {
+    console.log("pre: ", "< 768")
     const cards = document.getElementsByClassName("card")
     let maxHeight = 0
     for (let i = 0; i < cards.length; i++) {
@@ -11,43 +76,17 @@ export const Benefits = ({ screenWidth }) => {
       if (maxHeight < height)
         maxHeight = height
     }
+    console.log("mobileDisplay: ", mobileDisplay)
+    if (mobileDisplay == undefined || mobileDisplay == true)
+      return
+    console.log("post: ", "> 768")
     for (let i = 0; i < cards.length; i++) {
       cards[i].style.height = `${maxHeight * 1.12}px`
     }
   }, [screenWidth])
   return (
     <section className='page-section benefits-advantages-wrapper'>
-      <section className="benefits-advantages-section">
-        <h1 className="benefits-advantages-title">Leverage your current security system to its full potential</h1>
-        <div className="cards-container">
-          <div className="card">
-            <h2>Save time and resources</h2>
-            <p>Spend less time scrubbing through videos and be more focused on critical tasks</p>
-          </div>
-          <div className="card">
-            <h2>Increased proactivity</h2>
-            <p>Spot threats early and prevent escalation.</p>
-          </div>
-          <div className="card">
-            <h2>Boost Operational Awareness</h2>
-            <p>Receive detailed information on what is happening, in real time.</p>
-          </div>
-        </div>
-        <div className="cards-container">
-          <div className="card">
-            <h2>Accurate diagnosis</h2>
-            <p>Standard intelligent video security systems using pre-defined parameters fail to identify more complex behaviours and create false positives </p>
-          </div>
-          <div className="card">
-            <h2>Save Time</h2>
-            <p>Spend less time scrubbing through videos and be more focused on critical tasks</p>
-          </div>
-          <div className="card">
-            <h2>Simplify Post-Event Analysis</h2>
-            <p>Quickly retrieve the footage you are looking for</p>
-          </div>
-        </div>
-      </section >
+      {tabletDisplay ? <TabletBenefits /> : <DesktopBenefits />}
     </section >
   )
 }
