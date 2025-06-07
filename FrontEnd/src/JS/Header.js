@@ -12,7 +12,7 @@ export const Header = () => {
         <p className="second-text">Real time awareness and insight, when and where it matters most.<br />An optimal video security system.</p>
       </div>
       <div id="header-btn-cont">
-        <button className='classic-btn std-hover-active' id="service-btn">Request a demo</button>
+        <button className='classic-btn std-hover-active' id="service-btn">Request demo</button>
       </div >
       <div id="arrow-down-div"><ArrowDownSvg id="arrow-down-img" /></div>
     </header >
