@@ -27,7 +27,7 @@ header::after {
 
 header::before {
   top: -100px;
-  right: -100px;
+  right: 0;
 }
 
 header::after {
