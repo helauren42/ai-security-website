@@ -31,7 +31,9 @@ export const Footer = () => {
         </div>
       </div>
       <div id="footer-bottom">
-        <h4>©Novatus 2025</h4>
+        <div id="footer-bottom-cont">
+          <h4>©Novatus 2025</h4>
+        </div>
       </div>
     </footer >
   )

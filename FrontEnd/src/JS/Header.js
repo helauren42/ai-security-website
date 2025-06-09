@@ -3,7 +3,7 @@ import { ReactComponent as SendEmailSvg } from "../ICONS/send.svg"
 
 export const Header = () => {
   return (
-    <header>
+    <div className='page-section' id="header">
       <div id="header-ghost"></div>
       <div id="main-text-cont">
         <p className="main-text">Your digital security operations center</p>
@@ -15,6 +15,6 @@ export const Header = () => {
         <p id="service-btn">Request demo</p>
         <SendEmailSvg id="send-email-svg" />
       </div>
-    </header >
+    </div >
   )
 }

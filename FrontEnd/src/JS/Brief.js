@@ -1,7 +1,7 @@
 import '../CSS/Brief.css'
 export const Brief = () => {
   return (
-    <section id="section-brief">
+    <section className='page-section' id="section-brief">
       <div id="brief-cont">
         <h1 id="brief-title" > The Novatus Solution</h1 >
         <p className='classic-paragraph' id="brief-paragraph">Novatus transforms passive surveillance into real time video intelligence.<br />
