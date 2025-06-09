@@ -14,9 +14,9 @@ export const Footer = () => {
           <div id="social-media">
             <div id="social-media-subcont">
               <div id="social-links">
-                <div className="social-media-img-cont"><LinkedInIcon className="social-media-img" /></div>
-                <div className="social-media-img-cont"><YoutubeIcon className="social-media-img" /></div>
-                <div className="social-media-img-cont"><InstagramIcon className="social-media-img" /></div>
+                <div className="std-hover-active social-media-img-cont"><LinkedInIcon className="social-media-img" /></div>
+                <div className="std-hover-active social-media-img-cont"><YoutubeIcon className="social-media-img" /></div>
+                <div className="std-hover-active social-media-img-cont"><InstagramIcon className="social-media-img" /></div>
               </div>
             </div>
           </div>

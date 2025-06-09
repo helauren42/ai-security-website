@@ -32,7 +32,7 @@ function App() {
       <Brief />
       <Capabilities />
       <Benefits screenWidth={screenWidth} mobileDisplay={mobileDisplay} tabletDisplay={tabletDisplay} />
-      <CallToAction />
+      <CallToAction screenWidth={screenWidth} />
       <Footer />
     </div >
   );

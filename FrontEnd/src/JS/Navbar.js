@@ -51,7 +51,7 @@ export const Navbar = ({ screenWidth, tabletDisplay }) => {
         {tabletDisplay ? <TabletMenu /> : <ClassicMenu />}
       </div>
       <div id="nav-btn-cont">
-        <button className='classic-btn std-hover-active' id="navbar-demo">{screenWidth < 450 ? <SendEmailSvg /> : "Request demo"}</button>
+        <button className='classic-btn std-hover-active' id="navbar-demo">{screenWidth < 450 ? "Demo" : "Request demo"}</button>
       </div>
     </section>
   )
