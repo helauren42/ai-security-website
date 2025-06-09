@@ -1,5 +1,4 @@
 import '../CSS/Header.css'
-import { ReactComponent as ArrowDownSvg } from "../IMAGES/double-arrow-down-svgrepo-com.svg"
 import { ReactComponent as SendEmailSvg } from "../ICONS/send.svg"
 
 export const Header = () => {
@@ -16,7 +15,6 @@ export const Header = () => {
         <p id="service-btn">Request demo</p>
         <SendEmailSvg id="send-email-svg" />
       </div>
-      {/* <div id="arrow-down-div"><ArrowDownSvg id="arrow-down-img" /></div> */}
     </header >
   )
 }

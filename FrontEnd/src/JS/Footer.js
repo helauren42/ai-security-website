@@ -1,6 +1,6 @@
 import '../CSS/Footer.css'
 import { ReactComponent as LinkedInIcon } from '../ICONS/icons8-linkedin-black.svg'
-import { ReactComponent as YoutubeIcon } from '../ICONS/icons8-youtube-black.svg'
+import { ReactComponent as YoutubeIcon } from '../ICONS/youtube-black.svg'
 import { ReactComponent as InstagramIcon } from '../ICONS/icons8-instagram-black.svg'
 
 export const Footer = () => {
