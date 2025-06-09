@@ -8,7 +8,7 @@
 .short-divider {
   height: auto;
   width: auto;
-  max-width: 80%;
+  max-width: 90%;
   min-width: 60%;
   display: flex;
   flex-direction: row;
@@ -26,8 +26,18 @@
   font-size: 1.8rem;
 }
 
+#cta-demo {
+  padding: 1rem 1rem;
+}
+
 @media (max-width: 500px) {
   #cta-title {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  #cta-demo {
+    padding: 0.9rem 0.7rem;
   }
 }

@@ -20,7 +20,6 @@ const TabletMenu = () => {
       elem.style.display = "block"
     else
       elem.style.display = "none"
-
   }, [openMenu])
   return (
     <div id="dropdown">
@@ -41,14 +40,18 @@ const TabletMenu = () => {
   );
 };
 
-export const Navbar = ({ tabletDisplay }) => {
+export const Navbar = ({ screenWidth, tabletDisplay }) => {
   return (
-    <nav >
-      <section id="navbar">
-        <h1 className='std-hover-active' id="nav-title" > Novatus</h1 >
+    <section id="navbar">
+      <div id="nav-title-cont">
+        <h1 className='std-hover-active' id="nav-title" >{screenWidth < 450 ? "N" : "Novatus"}</h1 >
+      </div>
+      <div id="nav-menu-cont">
         {tabletDisplay ? <TabletMenu /> : <ClassicMenu />}
-        <button className='classic-btn std-hover-active' id="service-btn">Request demo</button>
-      </section>
-    </nav >
+      </div>
+      <div id="nav-btn-cont">
+        <button className='classic-btn std-hover-active' id="navbar-demo">{screenWidth < 450 ? "Demo" : "Request demo"}</button>
+      </div>
+    </section>
   )
 }

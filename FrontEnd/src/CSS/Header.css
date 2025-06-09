@@ -1,56 +1,38 @@
 header {
+  position: relative;
+  overflow: hidden;
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   color: var(--text-white);
-  padding: 5%;
   background-color: var(--main-black);
 }
 
-header::before,
-header::after {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: #3b1c8c;
-  filter: blur(100px);
-  opacity: 0.4;
-  z-index: 0;
-}
-
-header::before {
-  top: -100px;
-  right: 0;
-}
-
-header::after {
-  bottom: -100px;
-  left: -100px;
-}
 
 #header-ghost {
-  height: 10%;
+  height: 12%;
 }
 
 #main-text-cont {
-  background-color: var(--main-grey);
+  background-color: var(--blue-bg);
   flex-wrap: wrap;
   text-align: center;
-  border: 0.01rem solid var(--dark-border2);
+  /* border: 0.01rem solid var(--dark-border2); */
   box-shadow: 0px 0px 0.5rem var(--blue-shadow);
-  padding: 3% 5%;
+  border: 0.07rem solid var(--blue-shadow);
+  border-radius: 10rem;
+  padding: 3rem;
+  max-width: 90%;
 }
 
 .main-text {
   color: var(--text-white);
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 600;
   text-shadow: 1.5px 1.5px var(--blue-shadow);
 }
@@ -61,18 +43,19 @@ header::after {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 90%;
 }
 
 .second-text {
   color: var(--text-white);
+  font-size: 2rem;
 }
 
-#header-btn-cont {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
+
+#service-btn {
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
 }
 
 #arrow-down-div {
@@ -85,9 +68,9 @@ header::after {
 }
 
 #arrow-down-img {
-  width: 40px;
-  height: 40px;
-  fill: var(--second-grey);
+  width: 60px;
+  height: 60px;
+  fill: var(--main-grey);
 }
 
 #arrow-down-img:hover {
@@ -96,4 +79,67 @@ header::after {
 
 #arrow-down-img:active {
   transform: scale(0.9);
+}
+
+@media (max-width: 850px) {
+  #main-text-cont {
+    padding: 2rem;
+    border-radius: 5rem;
+  }
+
+  .main-text {
+    font-size: 3rem;
+  }
+
+  .second-text {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+  #main-text-cont {
+    padding: 2rem;
+    border-radius: 3rem;
+  }
+
+  .main-text {
+    font-size: 2.5rem;
+  }
+
+  .second-text {
+    font-size: 1.3rem;
+  }
+
+  #header-ghost {
+    height: 15%;
+  }
+
+  #service-btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #main-text-cont {
+    padding: 2rem;
+    border-radius: 3rem;
+  }
+
+  .main-text {
+    font-size: 2.2rem;
+  }
+
+  .second-text {
+    font-size: 1.3rem;
+  }
+
+  #header-ghost {
+    height: 15%;
+  }
+
+  #service-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
 }
