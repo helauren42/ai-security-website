@@ -13,7 +13,6 @@ header {
   background-color: var(--main-black);
 }
 
-
 #header-ghost {
   height: 12%;
 }
@@ -51,11 +50,23 @@ header {
   font-size: 2rem;
 }
 
+#service-btn-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 1rem;
+}
 
 #service-btn {
   display: grid;
   place-items: center;
   font-size: 1.3rem;
+}
+
+#send-email-svg {
+  display: inline;
 }
 
 #arrow-down-div {
