@@ -14,8 +14,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-top: 0.07rem solid var(--medium-border);
-  border-bottom: 0.07rem solid var(--medium-border);
+  border-top: 0.1rem solid var(--blue-shadow);
+  border-bottom: 0.1rem solid var(--blue-shadow);
   padding: 1rem;
   gap: 1.5rem;
 }

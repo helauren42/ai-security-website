@@ -45,7 +45,7 @@ export const Navbar = ({ screenWidth, tabletDisplay }) => {
   return (
     <section id="navbar">
       <div id="nav-title-cont">
-        <h1 className='std-hover-active' id="nav-title" >Novatus</h1 >
+        <h1 className='std-hover-active' id="nav-title" >{screenWidth < 450 ? "N" : "Novatus"}</h1 >
       </div>
       <div id="nav-menu-cont">
         {tabletDisplay ? <TabletMenu /> : <ClassicMenu />}
