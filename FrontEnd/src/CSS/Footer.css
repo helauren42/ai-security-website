@@ -1,5 +1,5 @@
 #footer-section {
-  height: 25vh;
+  height: auto;
   border-top: 0.07rem solid var(--blue-shadow);
   background-color: var(--blue-bg);
   display: flex;
@@ -15,7 +15,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  padding: 1.5rem 5%;
 }
 
 #company-socials {

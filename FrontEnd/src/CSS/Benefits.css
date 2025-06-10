@@ -46,7 +46,8 @@
 }
 
 .cards-container {
-  width: 100%;
+  width: auto;
+  max-width: 100vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

@@ -9,7 +9,7 @@ const DesktopBenefits = () => {
         <div className="card">
           <h2>Accurate diagnosis</h2>
           <div className="card-p-cont">
-            <p>Standard intelligent video securities fail to identify complex behaviours and create false positives </p>
+            <p>Standard intelligent video securities fail to identify complex behaviours and create false positives</p>
           </div>
         </div>
         <div className="card">
@@ -24,10 +24,6 @@ const DesktopBenefits = () => {
             <p>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
           </div>
         </div>
-        {/* <div className="card"> */}
-        {/*   <h2>Simplify Post-Event Analysis</h2> */}
-        {/*   <p>Quickly retrieve the footage you are looking for</p> */}
-        {/* </div> */}
       </div>
     </section >
   )

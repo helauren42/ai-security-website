@@ -28,7 +28,7 @@
 
 .nav-menu {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--text-white);
 }
 
@@ -67,7 +67,7 @@
 
 #navbar-demo {
   padding: 0.7rem 0.7rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 @media(max-width: 550px) {

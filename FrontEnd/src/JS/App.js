@@ -4,7 +4,7 @@ import { Navbar } from './Navbar';
 import { Header } from './Header'
 import { CallToAction } from './CallToAction';
 import { Footer } from './Footer';
-import { Capabilities } from './TripCardBlocks.js'
+import { Capabilities } from './Capabilities.js'
 import { Brief } from './Brief';
 import { Benefits } from './Benefits';
 
