@@ -4,24 +4,44 @@
 }
 
 :root {
-  --blue-bg: #110e20;
-  --card-black: #292937;
-  --main-black: #04040d;
-  --darker-black: #07070d;
+  /* --blue-bg: #110e20; */
+  /* purple */
+  --blue-bg: #130f27;
+  /* blue */
+  --blue-bg: #060318;
+  /* blue very dark */
+  /* --card-black: #292937; */
+  /* previous for capabilities */
+  /* --main-black: #04040d; */
+  --main-black: #010210;
+  /* blue */
   --main-grey: #14141a;
+  /* previous */
   --dark-border: #3d3d56;
   --medium-border: #858587;
   --blue-shadow: #3d3d56;
   /* --text-white: #F5F5F5; */
   --text-white: #c3c3ce;
+  --demo-btn: #3d3279;
+  /* purple */
+  --demo-btn: #302173;
+  /* blue */
 }
 
-/* .App { */
+/* .Content { */
 /*   display: flex; */
 /*   flex-direction: column; */
 /*   justify-content: space-evenly; */
-/*   gap: 3rem; */
+/*   gap: 3.5rem; */
 /* } */
+
+.standard-sep {
+  height: 3.5rem;
+}
+
+.rem-sep {
+  height: 1rem;
+}
 
 .page-section {
   box-sizing: border-box;
@@ -42,7 +62,7 @@
   font-size: 1rem;
   color: var(--text-white);
   border-radius: 0.5rem;
-  background-color: #3d3279;
+  background-color: var(--demo-btn);
   font-weight: 600;
   border-style: none;
 }

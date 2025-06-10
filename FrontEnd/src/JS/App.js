@@ -8,6 +8,18 @@ import { Capabilities } from './Capabilities.js'
 import { Brief } from './Brief';
 import { Benefits } from './Benefits';
 
+const StandardSep = () => {
+  return (
+    <section className='standard-sep' ></section>
+  )
+}
+
+const RemSep = () => {
+  return (
+    <section className='rem-sep' ></section>
+  )
+}
+
 function App() {
   const [mobileDisplay, setMobileDisplay] = useState(false)
   const [tabletDisplay, setTabletDisplay] = useState(false)
@@ -29,10 +41,21 @@ function App() {
     <div className="App">
       <Navbar screenWidth={screenWidth} tabletDisplay={tabletDisplay} />
       <Header />
+      <RemSep />
+      <StandardSep />
       <Brief />
+      <RemSep />
+      <RemSep />
+      <RemSep />
+      <StandardSep />
       <Capabilities />
+      <RemSep />
+      <RemSep />
+      <StandardSep />
       <Benefits screenWidth={screenWidth} mobileDisplay={mobileDisplay} tabletDisplay={tabletDisplay} />
+      <StandardSep />
       <CallToAction screenWidth={screenWidth} />
+      <StandardSep />
       <Footer />
     </div >
   );

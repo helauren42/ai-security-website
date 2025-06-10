@@ -1,6 +1,6 @@
 #footer-section {
   height: auto;
-  border-top: 0.07rem solid var(--blue-shadow);
+  border-top: 0.1rem solid var(--blue-shadow);
   background-color: var(--blue-bg);
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@
 
 #footer-bottom-cont {
   width: 100%;
-  border-top: 0.07rem solid var(--blue-shadow);
+  border-top: 0.1rem solid var(--blue-shadow);
   padding: 1rem 0rem;
   display: flex;
   flex-direction: column;

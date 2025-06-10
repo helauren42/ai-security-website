@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   color: var(--text-white);
-  margin: 5rem 0;
   flex-wrap: wrap;
 }
 
@@ -20,6 +19,7 @@
 }
 
 .benefits-advantages-tablet-section {
+  border-radius: 1rem;
   height: auto;
   width: 100%;
   display: flex;
@@ -53,6 +53,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
 }
 
 .cards-container-tablet {
@@ -66,15 +67,15 @@
 }
 
 .card {
-  width: 30%;
-  max-width: 300px;
+  width: 25vw;
+  max-width: 30vw;
   height: auto;
   padding: 2rem 1.5rem;
   padding-top: 1rem;
   background-color: var(--blue-bg);
-  border: 0.07rem solid var(--blue-shadow);
+  border: 0.1rem solid var(--blue-shadow);
   color: var(--text-white);
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -86,7 +87,7 @@
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .card-p-cont {
