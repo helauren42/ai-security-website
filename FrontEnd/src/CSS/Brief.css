@@ -116,21 +116,31 @@
   }
 
   #brief-paragraph {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
 }
 
-@media(max-width: 400px) {
+@media(max-width: 430px) {
   #brief-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   #how-it-works-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   #brief-paragraph {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+  }
+
+  .mini-trip-card h3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .mini-trip-card p {
+    text-align: start;
+    font-size: 1rem;
   }
 }
