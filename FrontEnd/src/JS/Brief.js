@@ -4,23 +4,23 @@ export const Brief = () => {
     <section className='page-section' id="section-brief">
       <div id="brief-cont">
         <h1 className="section-title" id="brief-title" > The Novatus Solution</h1 >
-        <p className='classic-paragraph' id="brief-paragraph">Novatus transforms passive surveillance into real time video intelligence.<br />
-          The Novatus AI software analyses and interprets the video data.<br /> Detecting early threats, understanding context, and delivering instant actionable insight. Plug the solution into any existing video surveillance systen and let Novatus do the rest.<br />
+        <p className='classic-paragraph' id="brief-paragraph">Novatus transforms passive surveillance into real time video intelligence.
+          The Novatus AI software analyses and interprets the video data. Detecting early threats, understanding context, and delivering instant actionable insight. Plug the solution into any existing video surveillance systen and let Novatus do the rest.<br />
         </p>
         <div id="how-it-works">
-          <h2 id="how-it-works-title">Novatus will interpret, act and search</h2>
+          <h2 className='section-title'>Novatus will interpret, act and search</h2>
           <div id="mini-trip-cards-section">
             <div className='mini-trip-card'>
-              <h3>Interpret</h3>
-              <p>AI detects context, behavior, and anomalies</p>
+              <h3 className='minitrip-title' >Interpret</h3>
+              <p className='minitrip-p' >AI detects context, behavior, and anomalies</p>
             </div>
             <div className='mini-trip-card'>
-              <h3>Act</h3>
-              <p>Alerts and summaries are generated instantly</p>
+              <h3 className='minitrip-title' >Act</h3>
+              <p className='minitrip-p' >Alerts and summaries are generated instantly</p>
             </div>
             <div className='mini-trip-card'>
-              <h3>Search</h3>
-              <p>Retrieve footage using natural language or filters</p>
+              <h3 className='minitrip-title' >Search</h3>
+              <p className='minitrip-p' >Retrieve footage using natural language or filters</p>
             </div>
           </div>
         </div>

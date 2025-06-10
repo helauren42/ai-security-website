@@ -7,21 +7,21 @@ const DesktopBenefits = () => {
       <h1 className="section-title benefits-advantages-title">Leverage your current security system to its full potential</h1>
       <div className="cards-container">
         <div className="card">
-          <h2>Accurate diagnosis</h2>
+          <h2 className='minitrip-title'>Accurate diagnosis</h2>
           <div className="card-p-cont">
-            <p>Standard intelligent video securities fail to identify complex behaviours and create false positives</p>
+            <p className='minitrip-p'>Standard intelligent video securities fail to identify complex behaviours and create false positives</p>
           </div>
         </div>
         <div className="card">
-          <h2>Save time and resources</h2>
+          <h2 className='minitrip-title'>Save time and resources</h2>
           <div className="card-p-cont">
-            <p>Spend less time scrubbing through videos and be more focused on critical tasks</p>
+            <p className='minitrip-p'>Spend less time scrubbing through videos and be more focused on critical tasks</p>
           </div>
         </div>
         <div className="card">
-          <h2>Proactivity and oversight</h2>
+          <h2 className='minitrip-title'>Proactivity and oversight</h2>
           <div className="card-p-cont">
-            <p>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
+            <p className='minitrip-p'>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
           </div>
         </div>
       </div>
@@ -35,22 +35,22 @@ const TabletBenefits = () => {
         <h1 className="section-title benefits-advantages-title">Leverage your current security system to its full potential</h1>
       </div>
       <div className="cards-container-tablet">
-        <div className="card">
-          <h2>Save time and resources</h2>
+        <div className="card-tablet">
+          <h2 className='minitrip-title'>Save time and resources</h2>
           <div className="card-p-cont">
-            <p>Spend less time scrubbing through videos and be more focused on critical tasks</p>
+            <p className='minitrip-p'>Spend less time scrubbing through videos and be more focused on critical tasks</p>
           </div>
         </div>
-        <div className="card">
-          <h2>Accurate diagnosis</h2>
+        <div className="card-tablet">
+          <h2 className='minitrip-title'>Accurate diagnosis</h2>
           <div className="card-p-cont">
-            <p>Standard intelligent video securities fail to identify complex behaviours and create false positives </p>
+            <p className='minitrip-p'>Standard intelligent video securities fail to identify complex behaviours and create false positives </p>
           </div>
         </div>
-        <div className="card">
-          <h2>Proactivity and oversight</h2>
+        <div className="card-tablet">
+          <h2 className='minitrip-title'>Proactivity and oversight</h2>
           <div className="card-p-cont">
-            <p>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
+            <p className='minitrip-p'>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
           </div>
         </div>
         {/* <div className="card"> */}
@@ -68,7 +68,7 @@ export const Benefits = ({ screenWidth, mobileDisplay, tabletDisplay }) => {
     let maxHeight = 0
     for (let i = 0; i < cards.length; i++) {
       cards[i].style.height = 'auto'
-      const height = cards[i].clientHeight
+      const height = cards[i].getBoundingClientRect().height
       if (maxHeight < height)
         maxHeight = height
     }
@@ -82,7 +82,7 @@ export const Benefits = ({ screenWidth, mobileDisplay, tabletDisplay }) => {
   }, [screenWidth])
   return (
     <section className='page-section benefits-advantages-wrapper'>
-      {tabletDisplay ? <TabletBenefits /> : <DesktopBenefits />}
+      {screenWidth < 1024 ? <TabletBenefits /> : <DesktopBenefits />}
     </section >
   )
 }

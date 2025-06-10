@@ -51,6 +51,7 @@
 
 .section-title {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .classic-paragraph {
@@ -81,16 +82,47 @@
   filter: brightness(60%);
 }
 
+.minitrip-title {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.minitrip-p {
+  text-align: start;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 800px) {}
 
 @media(max-width: 550px) {
   .section-title {
     font-size: 2rem;
   }
+
+  .minitrip-title {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .minitrip-p {
+    text-align: start;
+    font-size: 1.4rem;
+  }
+
 }
 
 @media(max-width: 430px) {
   .section-title {
     font-size: 1.6rem;
+  }
+
+  .minitrip-title {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .minitrip-p {
+    text-align: start;
+    font-size: 1.2rem;
   }
 }
