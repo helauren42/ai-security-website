@@ -7,7 +7,7 @@ import { ReactComponent as DocumentSearch } from '../IMAGES/undraw_document-sear
 export const Capabilities = () => {
   return (
     <section className='tc-wrapper'>
-      <h1 className="trip-card-title">Level up your security with intelligent surveillance and threat detection</h1>
+      <h1 className="section-title trip-card-title">Level up your security with intelligent surveillance and threat detection</h1>
       <section className="trip-card-section">
         <div className="cards-cont">
           <div className="classic-trip-card">

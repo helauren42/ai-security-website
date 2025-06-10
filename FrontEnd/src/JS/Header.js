@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import '../CSS/Header.css'
 import { ReactComponent as SendEmailSvg } from "../ICONS/send.svg"
 

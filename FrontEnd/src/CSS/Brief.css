@@ -108,14 +108,6 @@
 }
 
 @media(max-width: 550px) {
-  #brief-title {
-    font-size: 1.7rem;
-  }
-
-  #how-it-works-title {
-    font-size: 1.7rem;
-  }
-
   #brief-paragraph {
     font-size: 1.3rem;
   }
@@ -123,14 +115,6 @@
 }
 
 @media(max-width: 430px) {
-  #brief-title {
-    font-size: 1.6rem;
-  }
-
-  #how-it-works-title {
-    font-size: 1.6rem;
-  }
-
   #brief-paragraph {
     font-size: 1.2rem;
   }

@@ -41,7 +41,6 @@
 .benefits-advantages-title {
   width: 80%;
   color: var(--text-white);
-  font-size: 2rem;
   text-align: center;
 }
 
@@ -104,15 +103,6 @@
     width: 80%;
     max-width: 90%;
   }
-
-  /* .card h2 { */
-  /*   font-size: 1.1rem; */
-  /*   font-weight: 600; */
-  /* } */
-  /**/
-  /* .card p { */
-  /*   font-size: 0.9rem; */
-  /* } */
 }
 
 @media (max-width: 379px) {
@@ -129,13 +119,4 @@
     width: 80%;
     max-width: 90%;
   }
-
-  /* .card h2 { */
-  /*   font-size: 1rem; */
-  /*   font-weight: 600; */
-  /* } */
-  /**/
-  /* .card p { */
-  /*   font-size: 0.8rem; */
-  /* } */
 }

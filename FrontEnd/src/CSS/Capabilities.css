@@ -21,7 +21,6 @@
 .trip-card-title {
   max-width: 80%;
   color: var(--text-white);
-  font-size: 2rem;
   text-align: center;
 }
 
@@ -60,7 +59,7 @@
 }
 
 .capabilities h2 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 .capabilities p {
@@ -91,6 +90,7 @@
     height: auto;
     width: 100%;
     justify-content: space-between;
+    gap: 1rem;
   }
 
   .classic-trip-card {
@@ -123,29 +123,21 @@
 }
 
 @media (max-width: 600px) {
-  .trip-card-title {
+  .capabilities h2 {
     font-size: 1.9rem;
   }
 
-  .capabilities h2 {
-    font-size: 1.6rem;
-  }
-
   .capabilities p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 450px) {
-  .trip-card-title {
+  .capabilities h2 {
     font-size: 1.6rem;
   }
 
-  .capabilities h2 {
-    font-size: 1.4rem;
-  }
-
   .capabilities p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }

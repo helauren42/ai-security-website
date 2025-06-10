@@ -4,7 +4,7 @@ import "../CSS/Benefits.css"
 const DesktopBenefits = () => {
   return (
     <section className="benefits-advantages-desktop-section">
-      <h1 className="benefits-advantages-title">Leverage your current security system to its full potential</h1>
+      <h1 className="section-title benefits-advantages-title">Leverage your current security system to its full potential</h1>
       <div className="cards-container">
         <div className="card">
           <h2>Accurate diagnosis</h2>
@@ -32,7 +32,7 @@ const TabletBenefits = () => {
   return (
     <section className="benefits-advantages-tablet-section">
       <div id="benefits-advantages-title-wrapper">
-        <h1 className="benefits-advantages-title">Leverage your current security system to its full potential</h1>
+        <h1 className="section-title benefits-advantages-title">Leverage your current security system to its full potential</h1>
       </div>
       <div className="cards-container-tablet">
         <div className="card">

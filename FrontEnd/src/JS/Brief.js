@@ -3,12 +3,12 @@ export const Brief = () => {
   return (
     <section className='page-section' id="section-brief">
       <div id="brief-cont">
-        <h1 id="brief-title" > The Novatus Solution</h1 >
+        <h1 className="section-title" id="brief-title" > The Novatus Solution</h1 >
         <p className='classic-paragraph' id="brief-paragraph">Novatus transforms passive surveillance into real time video intelligence.<br />
-          The Novatus AI software analyses and interprets the video data.<br /> Detecting early threats, understanding context, and delivering instant actionable insight.<br />
+          The Novatus AI software analyses and interprets the video data.<br /> Detecting early threats, understanding context, and delivering instant actionable insight. Plug the solution into any existing video surveillance systen and let Novatus do the rest.<br />
         </p>
         <div id="how-it-works">
-          <h2 id="how-it-works-title">Plug the solution into any existing video surveillance system and Novatus will interpret, act and search</h2>
+          <h2 id="how-it-works-title">Novatus will interpret, act and search</h2>
           <div id="mini-trip-cards-section">
             <div className='mini-trip-card'>
               <h3>Interpret</h3>
