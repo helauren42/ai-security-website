@@ -8,23 +8,25 @@
   /* purple */
   /* --blue-bg: #130f27; */
   /* blue */
-  --blue-bg: #060318;
+  /* --blue-bg: #060318; */
   /* blue very dark */
   --blue-bg: rgb(25, 25, 42);
   --glass-blue-bg: rgba(32, 32, 53, 80%);
   /* --card-black: #292937; */
-  --main-black: #010210;
+  /* --main-black: #010210; */
+  /* --main-black: rgb(18, 18, 25); */
+  --main-black: rgb(9, 6, 20);
   /* blue */
-  --main-grey: #14141a;
+  /* --main-grey: #14141a; */
   /* previous */
   --blue-shadow: #3d3d56;
   --main-border: rgb(80, 75, 95);
   /* --main-border: rgb(61, 61, 86); */
   /* --text-white: #c3c3ce; */
   --text-white: rgb(206, 206, 210);
-  --demo-btn: #3d3279;
   /* purple */
-  --demo-btn: #302173;
+  /* --demo-btn: #302173; */
+  --demo-btn: rgb(45, 45, 95);
   /* blue */
 }
 

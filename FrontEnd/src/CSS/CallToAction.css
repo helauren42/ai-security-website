@@ -13,8 +13,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-top: 0.1rem solid var(--blue-shadow);
-  border-bottom: 0.1rem solid var(--blue-shadow);
+  border-top: 0.1rem solid var(--main-border);
+  border-bottom: 0.1rem solid var(--main-border);
   padding: 1rem;
   gap: 1.5rem;
 }
