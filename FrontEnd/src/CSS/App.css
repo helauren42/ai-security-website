@@ -97,7 +97,7 @@ p {
 }
 
 .std-hover-active:active {
-  transform: scale(95%);
+  transform: scale(92%);
   filter: brightness(60%);
 }
 

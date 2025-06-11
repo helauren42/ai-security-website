@@ -36,18 +36,17 @@ export const Navbar = ({ screenWidth, tabletDisplay }) => {
         </div>
       </div>
       {openMenu && (<div id="dropdown-menu-cont">
-        <div id="dropdown-menu" >
-          <button className=" dropdown-btn" onClick={() => {
-            setOpenMenu(false)
-          }}><h4>Platform</h4></button>
-          <button className=" dropdown-btn" onClick={() => {
-            setOpenMenu(false)
-          }}><h4>Faq</h4></button>
-          <button className=" dropdown-btn" onClick={() => {
-            setOpenMenu(false)
-          }}><h4>Careers</h4></button>
-        </div >
-      </div>)
+        <button className=" dropdown-btn" onClick={() => {
+          setOpenMenu(false)
+        }}><p>Platform</p></button>
+        <button className=" dropdown-btn" onClick={() => {
+          setOpenMenu(false)
+        }}><p>Faq</p></button>
+        <button className=" dropdown-btn" onClick={() => {
+          setOpenMenu(false)
+        }}><p>Careers</p></button>
+      </div >
+      )
       }
     </section>
   )
