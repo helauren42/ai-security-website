@@ -11,7 +11,7 @@
   /* --blue-bg: #060318; */
   /* blue very dark */
   --blue-bg: rgb(25, 25, 42);
-  --glass-blue-bg: rgba(32, 32, 53, 93%);
+  --glass-blue-bg: rgba(32, 32, 53, 80%);
   /* --card-black: #292937; */
   /* --main-black: #010210; */
   /* --main-black: rgb(18, 18, 25); */
@@ -78,6 +78,10 @@ p {
   background-color: var(--demo-btn);
   font-weight: 600;
   border-style: none;
+}
+
+.std-hover-active {
+  transition: all 0.25s ease;
 }
 
 .std-hover-active:hover {

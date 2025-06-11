@@ -1,13 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../CSS/Navbar.css'
-import { ReactComponent as SendEmailSvg } from "../ICONS/send.svg"
 
 const ClassicMenu = ({ setOpenMenu }) => {
-  useEffect(() => {
-    const elem = document.getElementById("dropdown-menu-cont")
-    elem.style.display = "none"
-    setOpenMenu(false)
-  })
   return (
     <ul className='nav-menu' id="nav-menu-classic">
       <li className="std-hover-active">Platform</li>
@@ -18,14 +12,6 @@ const ClassicMenu = ({ setOpenMenu }) => {
 }
 
 const TabletMenu = ({ openMenu, setOpenMenu }) => {
-  useEffect(() => {
-    console.log("openMenu: ", openMenu)
-    const elem = document.getElementById("dropdown-menu-cont")
-    if (openMenu)
-      elem.style.display = "block"
-    else
-      elem.style.display = "none"
-  }, [openMenu])
   return (
     <div id="dropdown">
       <button className='std-hover-active nav-menu' id="nav-menu-tablet" onClick={() => setOpenMenu(!openMenu)}> Menu
@@ -48,20 +34,21 @@ export const Navbar = ({ screenWidth, tabletDisplay }) => {
         <div id="nav-btn-cont">
           <button className='classic-btn std-hover-active' id="navbar-demo">{screenWidth < 600 ? "Demo" : "Request demo"}</button>
         </div>
-        <div id="dropdown-menu-cont">
-          <div id="dropdown-menu" >
-            <button className="std-hover-active dropdown-btn" onClick={() => {
-              setOpenMenu(false)
-            }}>Platform</button>
-            <button className="std-hover-active dropdown-btn" onClick={() => {
-              setOpenMenu(false)
-            }}>Faq</button>
-            <button className="std-hover-active dropdown-btn" onClick={() => {
-              setOpenMenu(false)
-            }}>Careers</button>
-          </div >
-        </div>
       </div>
+      {openMenu && (<div id="dropdown-menu-cont">
+        <div id="dropdown-menu" >
+          <button className=" dropdown-btn" onClick={() => {
+            setOpenMenu(false)
+          }}><h4>Platform</h4></button>
+          <button className=" dropdown-btn" onClick={() => {
+            setOpenMenu(false)
+          }}><h4>Faq</h4></button>
+          <button className=" dropdown-btn" onClick={() => {
+            setOpenMenu(false)
+          }}><h4>Careers</h4></button>
+        </div >
+      </div>)
+      }
     </section>
   )
 }
