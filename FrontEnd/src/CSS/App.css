@@ -27,7 +27,7 @@
   --text-grey: rgb(165, 165, 175);
   /* purple */
   /* --demo-btn: #302173; */
-  --demo-btn: rgb(45, 45, 95);
+  --demo-btn: rgb(55, 55, 105, 0.7);
   /* blue */
 }
 
@@ -78,6 +78,13 @@ p {
   background-color: var(--demo-btn);
   font-weight: 600;
   border-style: none;
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.25), inset -1px -1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.classic-btn:active {
+  box-shadow:
+    inset 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
 
 .std-hover-active {
