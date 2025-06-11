@@ -71,7 +71,7 @@
   height: auto;
   padding: 2rem 1.5rem;
   background-color: var(--blue-bg);
-  border: 0.1rem solid var(--blue-shadow);
+  border: 0.1rem solid var(--main-border);
   color: var(--text-white);
   border-radius: 1.5rem;
   display: flex;
@@ -87,7 +87,7 @@
   padding: 2rem 1.5rem;
   padding-top: 0rem;
   background-color: var(--blue-bg);
-  border: 0.1rem solid var(--blue-shadow);
+  border: 0.1rem solid var(--main-border);
   color: var(--text-white);
   border-radius: 1.5rem;
   display: flex;
