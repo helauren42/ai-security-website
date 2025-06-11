@@ -108,7 +108,7 @@
 
 #footer-bottom h4 {
   font-size: 0.8rem;
-  color: var(--text-white);
+  color: var(--text-grey);
 }
 
 @media (max-width: 500px) {

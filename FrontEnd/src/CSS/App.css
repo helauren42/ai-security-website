@@ -11,7 +11,7 @@
   /* --blue-bg: #060318; */
   /* blue very dark */
   --blue-bg: rgb(25, 25, 42);
-  --glass-blue-bg: rgba(32, 32, 53, 80%);
+  --glass-blue-bg: rgba(32, 32, 53, 93%);
   /* --card-black: #292937; */
   /* --main-black: #010210; */
   /* --main-black: rgb(18, 18, 25); */
@@ -24,6 +24,7 @@
   /* --main-border: rgb(61, 61, 86); */
   /* --text-white: #c3c3ce; */
   --text-white: rgb(206, 206, 210);
+  --text-grey: rgb(165, 165, 175);
   /* purple */
   /* --demo-btn: #302173; */
   --demo-btn: rgb(45, 45, 95);
@@ -54,10 +55,15 @@
 .section-title {
   font-size: 2.5rem;
   text-align: center;
+  color: var(--text-white);
+}
+
+p {
+  color: var(--text-grey);
 }
 
 .classic-paragraph {
-  color: var(--text-white);
+  color: var(--text-grey);
   font-size: 1.3rem;
   font-weight: 500;
   align-items: center;
@@ -87,6 +93,7 @@
 .minitrip-title {
   text-align: center;
   font-size: 1.6rem;
+  color: var(--text-white);
 }
 
 .minitrip-p {

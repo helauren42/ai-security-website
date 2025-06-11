@@ -46,7 +46,7 @@
 }
 
 .second-text {
-  color: var(--text-white);
+  color: var(--text-grey);
   font-size: 2rem;
 }
 
@@ -63,6 +63,7 @@
   display: grid;
   place-items: center;
   font-size: 1.4rem;
+  color: var(--text-white);
 }
 
 #send-email-svg {
@@ -131,12 +132,12 @@
 
 @media (max-width: 450px) {
   #main-text-cont {
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 3rem;
   }
 
   .main-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .second-text {
