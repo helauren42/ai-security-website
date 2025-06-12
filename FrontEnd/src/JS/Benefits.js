@@ -35,19 +35,19 @@ const TabletBenefits = () => {
         <h1 className="section-title benefits-advantages-title">Leverage your current security system to its full potential</h1>
       </div>
       <div className="cards-container-tablet">
-        <div className="card-tablet">
+        <div className="card-tablet neutral-glass blue-sun blue-sun-bottom">
           <h2 className='minitrip-title'>Save time and resources</h2>
           <div className="card-p-cont">
             <p className='minitrip-p'>Spend less time scrubbing through videos and be more focused on critical tasks</p>
           </div>
         </div>
-        <div className="card-tablet">
+        <div className="card-tablet neutral-glass blue-sun blue-sun-bottom">
           <h2 className='minitrip-title'>Accurate diagnosis</h2>
           <div className="card-p-cont">
             <p className='minitrip-p'>Standard intelligent video securities fail to identify complex behaviours and create false positives </p>
           </div>
         </div>
-        <div className="card-tablet">
+        <div className="card-tablet neutral-glass blue-sun blue-sun-bottom">
           <h2 className='minitrip-title'>Proactivity and oversight</h2>
           <div className="card-p-cont">
             <p className='minitrip-p'>Spot threats early and prevent escalation. Receive detailed information on what is happening, in real time.</p>
