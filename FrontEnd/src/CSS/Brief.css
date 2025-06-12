@@ -29,6 +29,9 @@
   /* border-radius: 1.5rem; */
   font-size: 1.5rem;
   text-align: center;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #how-it-works {

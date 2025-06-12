@@ -1,10 +1,12 @@
 import { useEffect } from 'react'
 import '../CSS/Header.css'
 import { ReactComponent as SendEmailSvg } from "../ICONS/send.svg"
+import { Stars } from './Stars'
 
 export const Header = () => {
   return (
     <div className='page-section' id="header">
+      <Stars />
       <div id="header-ghost"></div>
       <div id="main-text-cont" className='faded-glass'>
         <p className="main-text">Your digital security operations center</p>
