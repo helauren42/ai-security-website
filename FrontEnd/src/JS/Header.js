@@ -8,7 +8,6 @@ export const Header = () => {
     <div className='page-section' id="header">
       <div id="glass-stars"></div>
       <Stars />
-      <div id="header-ghost"></div>
       <div id="main-text-cont" className='faded-glass'>
         <p className="main-text">Your digital security operations center</p>
       </div>

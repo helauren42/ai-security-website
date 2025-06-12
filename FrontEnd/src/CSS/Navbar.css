@@ -144,6 +144,11 @@
   font-size: 1.2rem;
 }
 
+#navbar-demo p {
+  color: var(--text-white);
+  z-index: 1000;
+}
+
 @media(max-width: 700px) {
   #nav-title {
     font-size: 2rem;

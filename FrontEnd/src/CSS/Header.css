@@ -11,10 +11,8 @@
   align-items: center;
   flex-wrap: wrap;
   color: var(--text-white);
-}
-
-#header-ghost {
-  height: 12%;
+  padding-top: 8%;
+  padding-bottom: 2%;
 }
 
 #main-text-cont {
@@ -89,6 +87,10 @@
 }
 
 @media (max-width: 700px) {
+  #header {
+    padding-bottom: 5%;
+  }
+
   #main-text-cont {
     padding: 2rem;
     border-radius: 3rem;
@@ -112,6 +114,10 @@
 }
 
 @media (max-width: 450px) {
+  #header {
+    padding-bottom: 9%;
+  }
+
   #main-text-cont {
     padding: 1.5rem;
     border-radius: 3rem;

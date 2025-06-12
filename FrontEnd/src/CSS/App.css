@@ -61,6 +61,7 @@
 
 p {
   color: var(--text-grey);
+  z-index: 1000;
 }
 
 .neutral-glass {
