@@ -32,7 +32,7 @@ export const Navbar = ({ screenWidth, tabletDisplay }) => {
           {screenWidth < 920 ? <TabletMenu openMenu={openMenu} setOpenMenu={setOpenMenu} /> : <ClassicMenu setOpenMenu={setOpenMenu} />}
         </div>
         <div id="nav-btn-cont">
-          <button className='classic-btn std-hover-active' id="navbar-demo">{screenWidth < 600 ? "Demo" : "Request demo"}</button>
+          <button className='classic-btn' id="navbar-demo">{screenWidth < 600 ? "Demo" : "Request demo"}</button>
         </div>
       </div>
       {openMenu && (<div id="dropdown-menu-cont">

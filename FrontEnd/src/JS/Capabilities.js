@@ -10,7 +10,7 @@ export const Capabilities = () => {
       <h1 className="section-title trip-card-title">Level up your security with intelligent surveillance and threat detection</h1>
       <section className="trip-card-section">
         <div className="cards-cont">
-          <div className="classic-trip-card simple-glass">
+          <div className="classic-trip-card simple-glass-invert">
             <div className="capabilities">
               <h2>Context Aware Threat Detection</h2>
               <p>Identify suspicious behavior patterns like loitering, group formation, and face-covering before an incident unfolds.
@@ -30,7 +30,7 @@ export const Capabilities = () => {
               <CloudSync className='capability-img' />
             </div>
           </div>
-          <div className="classic-trip-card simple-glass">
+          <div className="classic-trip-card simple-glass-invert">
             <div className="capabilities">
               <h2>Searchable Surveillance with AI Summaries</h2>
               <p>Find key footage using natural language. Instantly retrieve clips that match queries like “Somebody with a black bag fighting.”

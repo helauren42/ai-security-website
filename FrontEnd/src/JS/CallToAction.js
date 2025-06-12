@@ -6,7 +6,7 @@ export const CallToAction = ({ screenWidth }) => {
     <section className="page-section" id="call-to-action">
       <div className="short-divider">
         <p className="minitrip-p" id="cta-title">Schedule a free call now to find how you will benefit from Novatus</p>
-        <div className='classic-btn std-hover-active' id="cta-demo">
+        <div className='classic-btn' id="cta-demo">
           <p id="cta-btn">{screenWidth < 450 ? "Demo" : "Request demo"}</p>
           <SendEmailSvg id="send-email-svg" />
         </div>
