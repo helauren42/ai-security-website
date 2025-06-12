@@ -10,15 +10,15 @@ export const Brief = () => {
         <div id="how-it-works">
           <h2 className='section-title'>Novatus will interpret, act and search</h2>
           <div id="mini-trip-cards-section">
-            <div className='mini-trip-card'>
+            <div className='mini-trip-card simple-glass'>
               <h3 className='minitrip-title' >Interpret</h3>
               <p className='minitrip-p' >AI detects context, behavior, and anomalies</p>
             </div>
-            <div className='mini-trip-card'>
+            <div className='mini-trip-card simple-glass'>
               <h3 className='minitrip-title' >Act</h3>
               <p className='minitrip-p' >Alerts and summaries are generated instantly</p>
             </div>
-            <div className='mini-trip-card'>
+            <div className='mini-trip-card simple-glass'>
               <h3 className='minitrip-title' >Search</h3>
               <p className='minitrip-p' >Retrieve footage using natural language or filters</p>
             </div>

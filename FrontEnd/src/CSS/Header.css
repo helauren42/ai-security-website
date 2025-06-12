@@ -1,4 +1,5 @@
 #header {
+  position: relative;
   overflow: hidden;
   box-sizing: border-box;
   width: 100vw;
@@ -10,8 +11,6 @@
   align-items: center;
   flex-wrap: wrap;
   color: var(--text-white);
-  background-color: var(--main-black);
-  /* background: linear-gradient(135deg, var(--main-black), var(--blue-bg)); */
 }
 
 #header-ghost {
@@ -19,6 +18,7 @@
 }
 
 #main-text-cont {
+  position: relative;
   background-color: var(--blue-bg);
   flex-wrap: wrap;
   text-align: center;
@@ -29,6 +29,7 @@
   padding: 3rem;
   max-width: 90%;
 }
+
 
 .main-text {
   color: var(--text-white);

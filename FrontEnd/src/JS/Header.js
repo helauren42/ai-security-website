@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <div className='page-section' id="header">
       <div id="header-ghost"></div>
-      <div id="main-text-cont">
+      <div id="main-text-cont" className='faded-glass'>
         <p className="main-text">Your digital security operations center</p>
       </div>
       <div className="classic-paragraph" id="second-text-cont">

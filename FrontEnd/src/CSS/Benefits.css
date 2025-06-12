@@ -81,6 +81,7 @@
 }
 
 .card {
+  position: relative;
   width: 25vw;
   max-width: 30vw;
   height: auto;
@@ -94,6 +95,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
+  z-index: -2;
 }
 
 .card-p-cont {

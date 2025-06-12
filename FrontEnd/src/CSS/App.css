@@ -50,6 +50,7 @@
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 .section-title {
@@ -60,6 +61,107 @@
 
 p {
   color: var(--text-grey);
+}
+
+.neutral-glass {
+  position: relative;
+  z-index: -2;
+}
+
+.neutral-glass:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: inherit;
+  background: linear-gradient(155deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  z-index: -1;
+}
+
+.simple-glass {
+  position: relative;
+  z-index: -1;
+}
+
+.simple-glass:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(25, 25, 55, 0.09), rgba(225, 225, 255, 0.15));
+  z-index: -1;
+}
+
+.simple-glass-invert {
+  position: relative;
+  z-index: -1;
+}
+
+.simple-glass-invert:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(225, 225, 255, 0.15), rgba(25, 25, 55, 0.09));
+  z-index: -1;
+}
+
+.faded-glass {
+  position: relative;
+  z-index: -3;
+}
+
+.faded-glass:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: inherit;
+  background: linear-gradient(155deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.10));
+  z-index: -2;
+}
+
+.faded-glass:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: inherit;
+  background: linear-gradient(135deg, transparent, rgba(185, 185, 255, 0.1), transparent);
+  /* background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1), transparent); */
+  z-index: -1;
+}
+
+.blue-sun {
+  position: relative;
+  z-index: -1;
+}
+
+.blue-sun:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  background:
+    radial-gradient(circle at top left, rgba(150, 120, 255, 0.1) 10%, transparent 30%),
+    radial-gradient(circle at bottom right, rgba(150, 120, 255, 0.1) 10%, transparent 30%),
+    linear-gradient(155deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  left: 0%;
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .classic-paragraph {
@@ -78,13 +180,11 @@ p {
   background-color: var(--demo-btn);
   font-weight: 600;
   border-style: none;
-  box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.25), inset -1px -1px 2px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.25), inset -1px -1px 2px rgba(255, 255, 255, 0.1);
 }
 
 .classic-btn:active {
-  box-shadow:
-    inset 0px 0px 2px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
 
 .std-hover-active {

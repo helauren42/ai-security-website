@@ -5,7 +5,7 @@ import { ReactComponent as InstagramIcon } from '../ICONS/icons8-instagram-black
 
 export const Footer = () => {
   return (
-    <footer className='page-section' id='footer-section'>
+    <footer className='page-section neutral-glass' id='footer-section'>
       <div id="footer-main">
         <div id="company-socials">
           <div id="company">

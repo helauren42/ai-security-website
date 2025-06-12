@@ -24,7 +24,7 @@ export const Navbar = ({ screenWidth, tabletDisplay }) => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
     <section id="navbar-cont">
-      <div id="navbar">
+      <div id="navbar" className='neutral-glass'>
         <div id="nav-title-cont">
           <h1 className='std-hover-active' id="nav-title" >{screenWidth < 490 ? "N" : "Novatus"}</h1 >
         </div>
