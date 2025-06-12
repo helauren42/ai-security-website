@@ -6,6 +6,7 @@ import { Stars } from './Stars'
 export const Header = () => {
   return (
     <div className='page-section' id="header">
+      <div id="glass-stars"></div>
       <Stars />
       <div id="header-ghost"></div>
       <div id="main-text-cont" className='faded-glass'>
